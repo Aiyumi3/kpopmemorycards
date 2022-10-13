@@ -1,4 +1,5 @@
 body {
+    font-family: 'Brush Script MT', cursive;
     height: available;
     width: available;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -83,7 +84,8 @@ footer {
     border-radius: 20px 20px 0 0 ;
     font-weight: 700;
     letter-spacing: 0.2px;
-    padding-top: 10px
+    padding-top: 10px;
+    
 }
 header, nav.navbar {
     background: linear-gradient(#4d0039, #e6ccff, thistle);
