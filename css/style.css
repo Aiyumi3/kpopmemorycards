@@ -14,6 +14,19 @@ body {
     background: linear-gradient(-45deg, #ffd1ac, #e6ccff, #ff9999);
     justify-content: center;
 }
+#cards li {
+    list-style: none;
+    background: transparent;
+    width: available;
+    border-radius: 10px;
+    float: left;
+    height: available;	
+    background-repeat: no-repeat;
+    cursor: pointer;    
+    background-size: 90px 59px;
+    background-position: center;
+    transition: visibility .6s ease-in-out;
+}
 a:link {
     color: #e60073;
     background-color: transparent;
@@ -63,7 +76,7 @@ img:focus {
     outline:0;
 }
 footer {
-    height: 310px;
+    height: 790px;
     background: linear-gradient(#330026, #000000);
     color: ivory;
     text-align: center;
