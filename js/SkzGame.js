@@ -68,6 +68,7 @@ const cardArr = [
 
 const countCards = cardArr.length;
 const cardsField = document.querySelector("#cards");
+const css = document.querySelector("#cards li");
 const skzGameB = document.querySelector('button#skz');
 const welcomeTxt = document.querySelector('div#welcome');
 let content = document.querySelector('#content');
@@ -89,6 +90,7 @@ const game = document.querySelector('#game');
 
 
 function start(){
+	css.style.backgroundImage = 'url("./images/skz/logo_skz.jpg")';
         content.style.height = "45px";
         welcomeTxt.style.display = "none";
         txtGameB.disabled = true;
@@ -135,7 +137,7 @@ function createBoard() {
             //let card = document.createElement('img');
             let li = document.createElement("li"); //card
             li.id = i;
-            li..style.backgroundImage = 'url("./images/skz/logo_skz.jpg")';
+            li.style.backgroundImage = 'url("./images/skz/logo_skz.jpg")';
            // card.setAttribute('img-id', i);
 	     cardsField.appendChild(li); //game
 
@@ -155,7 +157,7 @@ function createBoard() {
 			if(selectedCards.length == 2) {
 				pause = true;
                 
-				if( cardArr[ selectedCards[0].id ].img == cardArr[ selectedCards[1].id ].img ) {
+				if( cardArr[selectedCards[0].id].img == cardArr[selectedCards[1].id].img ) {
 					selectedCards[0].style.visibility = "hidden";
 					selectedCards[1].style.visibility = "hidden";
 					deletedCards = deletedCards + 2;
@@ -209,7 +211,7 @@ skzGameB.onclick = function() {
     //let targetId = evt.target.id;
     //switch (targetId) {
        // case "skz":
-     console.log('gameSKZ');
+     //console.log('gameSKZ');
      start();
      createBoard();
           //  break;
