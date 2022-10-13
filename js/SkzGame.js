@@ -150,7 +150,7 @@ function createBoard(style) {
 		if(element.tagName == "LI" && element.className != "active") {
 			selectedCards.push(element);
 			element.className = "active";
-			element.style.backgroundImage = 'url("./images/skz/' + cardArr[selectedCards[1].id].img)';
+			element.style.backgroundImage = 'url("./images/skz/' + cardArr[element.id].img)';
 
 			if(selectedCards.length == 2) {
 				pause = true;
