@@ -1,5 +1,5 @@
 body {
-    font-family: 'Brush Script MT', cursive;
+    font-family: Arial;
     height: available;
     width: available;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -85,9 +85,10 @@ footer {
     font-weight: 700;
     letter-spacing: 0.2px;
     padding-top: 10px;
-    
+    font-family: Arial;
 }
 header, nav.navbar {
+     font-family: Arial;
     background: linear-gradient(#4d0039, #e6ccff, thistle);
     color: ivory;
     text-align: center;
