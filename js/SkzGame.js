@@ -90,7 +90,7 @@ const game = document.querySelector('#game');
 
 function start(){
         content.style.height = "45px";
-        welcomeTxt.style.display = "";
+        welcomeTxt.style.display = "none";
         txtGameB.disabled = true;
         tbzGameB.disabled = true;
         astroGameB.disabled = true;
