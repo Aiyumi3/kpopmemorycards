@@ -16,7 +16,6 @@ body {
 }
 #cards li {
     list-style: none;
-    background: transparent;
     width: available;
     border-radius: 10px;
     float: left;
