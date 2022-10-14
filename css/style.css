@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: Arial, serif;
     height: available;
     width: available;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -10,22 +10,46 @@ body {
     flex-wrap: wrap;
     height: available;
     margin: 25px;
-    padding: 1.17px;
-    border-radius: 10px;
+    padding: 24px 5px 9px 10px;
     background: linear-gradient(-45deg, #ffd1ac, #e6ccff, #ff9999);
     justify-content: center;
+	border-radius: 19px;
+    border: 1px dashed #99004d;
+    box-shadow: 1px 3px 4px 11px rgba(255, 179, 217, 0.19), 1px 17px 27px 2px rgba(87, 15, 51, 0.9);
+    
 }
 #cards li {
-    list-style: none;
-    width: available;
-    border-radius: 10px;
-    float: left;
-    height: available;	
-    background-repeat: no-repeat;
-    cursor: pointer;    
-    background-size: 90px 59px;
-    background-position: center;
-    transition: visibility .6s ease-in-out;
+	list-style: none;
+	background: #BEDAF1;
+	width: 96px;
+	float: left;
+	height: 96px;
+	cursor: pointer;    
+    border-radius: 19px;
+    border: 1.3px dashed #99004d;
+    box-shadow: 1px 3px 4px 11px rgba(255, 179, 217, 0.19), 1px 17px 27px 2px rgba(87, 15, 51, 0.9);
+    transition: transform ease-in 0.4s, box-shadow ease-in 0.25s;
+    padding-block: 3px;
+    margin: 9px;
+}
+#cards {
+	padding-block: 3px;
+	margin-left: 29px;
+}
+#cards li:hover {
+    box-shadow: 0 2px 10px 5px #481ABCE0;
+    opacity: 0.5;
+}
+#cards li:after {
+    opacity: 0;
+    transition: all 0.8s;
+}
+#cards li:active:after {
+    opacity: 1;
+    transition: 0s;
+}
+#cards li:focus {
+    outline:0;
 }
 a:link {
     color: #e60073;
@@ -48,32 +72,6 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-img {
-    border-radius: 19px;
-    height: 90px;
-    width: 59px;
-    border: 1.3px dashed #99004d;
-    box-shadow: 1px 3px 4px 11px rgba(255, 179, 217, 0.19), 1px 17px 27px 2px rgba(87, 15, 51, 0.9);
-    cursor: pointer;
-    transition: transform ease-in 0.4s, box-shadow ease-in 0.25s;
-    padding-block: 3px;
-    margin: 9px;
-}
-img:hover {
-    box-shadow: 0 2px 10px 5px #481ABCE0;
-    opacity: 0.5;
-}
-img:after {
-    opacity: 0;
-    transition: all 0.8s;
-}
-img:active:after {
-    opacity: 1;
-    transition: 0s;
-}
-img:focus {
-    outline:0;
 }
 footer {
     height: 790px;
