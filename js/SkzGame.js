@@ -37,12 +37,12 @@ function start(){
         timer = setInterval(timeAcc, 1000); // подождать 1 секунду чтобы высветилось время
         
         cardArr.sort(() => 0.5 - Math.random());
-       /* let music = new Audio('./images/skz/fullAlbum_Skz_christmasEvel.mp3');
+        let music = new Audio('./images/skz/fullAlbum_Skz_christmasEvel.mp3');
         music.addEventListener('ended', function() {
             this.currentTime = 0;
             this.play();
         }, false);
-        music.play();*/
+        music.play();
 
     }
 start();
