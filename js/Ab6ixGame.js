@@ -43,7 +43,7 @@ function start(){
             this.play();
         }, false);
         music.play();
-    }
+   }
 start();
 function createBoard() {
 
