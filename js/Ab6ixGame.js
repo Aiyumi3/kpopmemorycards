@@ -43,9 +43,6 @@ function start(){
             this.play();
         }, false);
         music.play();
-	if(music.isPlaying == false || this.sound.locked==false){
-	    music.play();
-	}
     }
 start();
 function createBoard() {
