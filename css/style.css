@@ -32,9 +32,7 @@ body {
     margin: 9px;
 }
 #cards {
-   padding-block: 3px;
-    margin-left: 1.4px;
-    padding: 16px;
+    padding-left: 9px;
 }
 dl, ol, ul {
     margin-top: 8px;
